@@ -1,17 +1,17 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
-const db = require('./Models');
-const cors = require('cors');
-const helmet = require('helmet');
+const express = require("express");
+const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+const db = require("./Models");
+const cors = require("cors");
+const helmet = require("helmet");
 
 // import routes here
-const index = require('./routes/index');
+const index = require("./routes/index");
 
 dotenv.config();
 const app = express();
-app.use(morgan('tiny'));
+app.use(morgan("tiny"));
 
 // Set Security HTTP Headers
 app.use(helmet());
@@ -31,6 +31,6 @@ app.use(
 );
 
 // use routes here
-app.use('/v1/index', index)
+app.use("/v1/index", index);
 
 module.exports = app;
