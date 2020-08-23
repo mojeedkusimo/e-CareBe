@@ -1,8 +1,8 @@
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable comma-dangle */
-const fs = require('fs');
-const path = require('path');
-const Sequelize = require('sequelize');
+const fs = require("fs");
+const path = require("path");
+const Sequelize = require("sequelize");
 
 const basename = path.basename(__filename);
 
@@ -14,7 +14,7 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD,
   {
     host: process.env.DB_HOST,
-    dialect: 'mysql',
+    dialect: "mysql",
     logging: false,
   }
 );
@@ -22,7 +22,7 @@ const sequelize = new Sequelize(
 fs.readdirSync(__dirname)
   .filter(
     (file) =>
-      file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
+      file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
   )
   .forEach((file) => {
     const model = sequelize.import(path.join(__dirname, file));
