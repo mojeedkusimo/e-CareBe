@@ -15,7 +15,7 @@ const normalizePort = (val) => {
   return false;
 };
 // set the port
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.NODE_ENV === 'deployment' ? process.env.PORT : '3000');
 
 // create a http server
 const server = app.listen(port, () => {
