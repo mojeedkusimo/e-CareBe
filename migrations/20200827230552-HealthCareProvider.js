@@ -18,46 +18,60 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       address_line1: {
         type: Sequelize.TEXT,
+        allowNull: true,
       },
       accreditation_no: {
         type: Sequelize.STRING,
+        allowNull: true,
       },
       hotline: {
         type: Sequelize.STRING,
+        allowNull: true,
       },
       private_govt: {
         type: Sequelize.ENUM,
         values: ["private", "government"],
+        allowNull: true,
       },
       occupation: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       long: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       lat: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       healthcare_type: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       address_line2: {
         type: Sequelize.TEXT,
+        allowNull: true,
       },
       city: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       state: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       country: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       zipcode: {
         type: Sequelize.INTEGER,
+        allowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,

@@ -10,21 +10,33 @@ module.exports = (sequelize, DataTypes) => {
       },
       last_medication: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       remark: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: false,
       },
       phenotype: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       genotype: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       blood_group: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       last_appointment: {
         type: DataTypes.DATE,
+        defaultValue: false,
+        allowNull: false,
       },
       patient_id: {
         type: DataTypes.INTEGER,

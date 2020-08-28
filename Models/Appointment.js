@@ -10,22 +10,34 @@ module.exports = (sequelize, DataTypes) => {
       },
       patient_name: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+      allowNull: true,
       },
       patient_email: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+      allowNull: true,
       },
       phone_no: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+      allowNull: true,
       },
       preferred_date: {
         type: DataTypes.DATEONLY,
+        defaultValue: false,
+      allowNull: true,
       },
       preferred_time: {
         type: DataTypes.TIME,
+        defaultValue: false,
+      allowNull: true,
       },
       reason_for_appointment: {
         type: DataTypes.ENUM,
         values: ["consultation", "antenatal", "others"],
+        defaultValue: false,
+      allowNull: true,
       },
       patient_id: {
         type: DataTypes.INTEGER,

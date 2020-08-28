@@ -13,27 +13,43 @@ module.exports = (sequelize, DataTypes) => {
       },
       staff_email: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       staff_name: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: false,
       },
       password: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       password_token: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       password_token_expire: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+        allowNull: true,
       },
       phone_no: {
         type: DataTypes.STRING(255),
+        defaultValue: false,
+      allowNull: true,
       },
       role: {
         type: DataTypes.STRING,
+        defaultValue: false,
+        allowNull: false,
       },
       department: {
         type: DataTypes.STRING,
+        defaultValue: false,
+        allowNull: true,
       },
       created_at: {
         type: DataTypes.DATE,

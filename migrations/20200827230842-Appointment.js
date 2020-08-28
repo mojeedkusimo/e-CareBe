@@ -18,12 +18,15 @@ module.exports = {
       },
       patient_name: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       patient_email: {
         type: Sequelize.STRING(255),
+        allowNull: false,
       },
       phone_no: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       preferred_date: {
         type: Sequelize.DATEONLY,

@@ -25,27 +25,35 @@ module.exports = {
       },
       staff_email: {
         type: Sequelize.STRING(255),
+        allowNull: false,
       },
       staff_name: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password_token: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password_token_expire: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       phone_no: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       role: {
         type: Sequelize.STRING,
+        allowNull: true,
       },
       department: {
         type: Sequelize.STRING,
+        allowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,

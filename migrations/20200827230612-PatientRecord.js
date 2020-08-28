@@ -18,21 +18,27 @@ module.exports = {
       },
       last_medication: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       remark: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       phenotype: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       genotype: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       blood_group: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       last_appointment: {
         type: Sequelize.DATE,
+        allowNull: true,
       },
       patient_id: {
         type: Sequelize.INTEGER,

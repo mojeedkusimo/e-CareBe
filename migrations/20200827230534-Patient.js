@@ -18,44 +18,57 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       age: {
         type: Sequelize.INTEGER,
+        allowNull: true,
       },
       sex: {
         type: Sequelize.ENUM,
         values: ["male", "female"],
+        allowNull: true,
       },
       marital_status: {
         type: Sequelize.ENUM,
         values: ["single", "married"],
+        allowNull: true,
       },
       email: {
         type: Sequelize.STRING(255),
+        allowNull: false,
       },
       occupation: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       address: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       next_of_kin: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       nok_address: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       nok_phone: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password_token: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       password_token_expire: {
         type: Sequelize.STRING(255),
+        allowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,
