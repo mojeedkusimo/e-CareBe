@@ -8,7 +8,7 @@
     "start": "node server.js",
     "test": "npm run test",
     "db:makemigrations": "./node_modules/sequelize-auto-migrations/bin/makemigration.js",
-    "lint": "eslint Models/* Utils/* Routes/* Controllers/* server.js"
+    "lint": "eslint Models/* utils/* routes/* controllers/* server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
