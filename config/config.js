@@ -10,8 +10,9 @@ module.exports = {
 		dialect: 'mysql',
 		define : {
 		"timestamps":false,
-		"underscored":true,
-		}
+		"underscored":true
+	
+		
 	},
 	test: {
 		username: 'root',
@@ -21,8 +22,8 @@ module.exports = {
 		dialect: 'mysql2',
 		define : {
 		"timestamps":false,
-		"underscored":true,
-		}
+		"underscored":true
+		
 	},
 	production: {
 		username: 'root',
@@ -34,5 +35,6 @@ module.exports = {
 		"timestamps":false,
 		"underscored":true,
 		}
-	},
-};
+		
+	}
+
