@@ -1,5 +1,5 @@
 const db = require('../models/index');
-const paypal = require('paypal-res-sdk');
+const paypal = require('paypal-rest-sdk');
 
 const Patient = db.Patient;
 
