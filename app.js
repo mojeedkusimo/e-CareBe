@@ -8,6 +8,7 @@ const helmet = require('helmet');
 
 // import routes here
 const index = require('./routes/index');
+const updatePatient = require('./routes/updatePatient');
 
 dotenv.config();
 const app = express();
@@ -32,5 +33,6 @@ app.use(
 
 // use routes here
 app.use('/v1/index', index);
+app.use('/v1/patient/update', updatePatient)
 
 module.exports = app;
