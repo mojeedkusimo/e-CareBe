@@ -9,6 +9,7 @@ const helmet = require('helmet');
 // import routes here
 const index = require('./routes/index');
 const updatePatient = require('./routes/updatePatient');
+const payWithPayPal = require('./routes/payWithPayPal');
 
 dotenv.config();
 const app = express();
@@ -34,5 +35,5 @@ app.use(
 // use routes here
 app.use('/v1/index', index);
 app.use('/v1/patient/update', updatePatient)
-
+app.use('/v1/payment/paypal', payWithPayPal)
 module.exports = app;
