@@ -36,8 +36,8 @@ app.use(
 
 // mount routers here
 app.use('/v1/index', index);
-app.use('/v1/patient/update', updatePatient)
-app.use('/v1/payment/paypal', payWithPayPal)
+app.use('/v1/patient/update', updatePatient);
+app.use('/v1/payment/paypal', payWithPayPal);
 app.use('/v1/auth', auth);
 
 // middlewares
