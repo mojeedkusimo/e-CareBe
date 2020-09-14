@@ -10,7 +10,7 @@ module.exports = {
 		dialect: 'mysql',
 		define: {
 			timestamps: false,
-		},
+		}
 	},
 	test: {
 		username: 'root',
@@ -20,8 +20,8 @@ module.exports = {
 	dialect: 'mysql',
 		define: {
 			timestamps: false,
-		}
-	},
+		},
+
 	production: {
 		username: 'root',
 		password: null,
@@ -31,5 +31,6 @@ dialect: 'mysql',
 		define: {
 			timestamps: false,
 		}
-	},
-};
+		
+	}
+
