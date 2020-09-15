@@ -50,7 +50,7 @@ module.exports = {
 				type: Sequelize.INTEGER,
 				references: {
 					model: 'staffs', // name of Target model
-					key: 'id', // key in Target model that we're referencing
+					key: 'staff_id', // key in Target model that we're referencing
 				},
 			},
 			created_at: {
